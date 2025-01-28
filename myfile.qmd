@@ -9,3 +9,17 @@ editor: visual
 library(tidyverse)
 library(palmerpenguins)
 ```
+
+```{r}
+# echo = FALSE
+penguins <- palmerpenguins::penguins
+
+penguins |>
+  ggplot(
+    aes(x = flipper_length_mm,
+        y = body_mass_g,
+        colour = species)
+  ) +
+  geom_point()
+```
+
