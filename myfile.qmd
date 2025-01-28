@@ -11,7 +11,7 @@ library(palmerpenguins)
 ```
 
 ```{r}
-# echo = FALSE
+#| echo = FALSE
 penguins <- palmerpenguins::penguins
 
 penguins |>
